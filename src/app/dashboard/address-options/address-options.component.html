@@ -1,0 +1,25 @@
+<section class="addressOptionMAin">
+<div class="btnIcon" *ngIf="!addListDisplay">
+    <button mat-icon-button (click)="addOption()">
+        <mat-icon>add_circle</mat-icon>
+    </button>
+</div>
+<div class="addlist" *ngIf="addListDisplay">
+    <div class="addlistWrap">
+        <div class="addGenerateNew">
+            <button mat-raised-button color="primary"  matTooltip="add new user address" (click)="generateNew()">Generate New Address
+            </button>
+        </div>
+        <div class="addExisting">
+            <button mat-raised-button color="primary" (click)="addExisting()">Add Existing Address</button>
+        </div>
+    </div>
+    <!-- <div *ngIf="displayRoutes">
+            <router-outlet></router-outlet>
+    </div> -->
+   
+</div>
+
+</section>
+
+

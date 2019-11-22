@@ -1,0 +1,59 @@
+.generateWrap {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.generateMainWrap{
+    min-width:30vw;
+    min-height:40vh;
+    .generateCloseBtn{
+            .close-dialog {
+                background: transparent;
+                border: none;
+                outline: none;
+                // position: absolute !important;
+                // right: 6px;
+                // top: 6px;
+                float:right;
+                padding: 0px !important;
+                cursor: pointer;
+                &:focus {
+                  outline: none;
+                }
+                &:hover {
+                  background: transparent;
+                }
+                mat-icon {
+                //   color: #fff;
+                  font-size: 14px;
+                }
+              
+
+        }
+    }
+    .generateFormHeading{
+        h3{
+            padding:0;
+            margin:0;
+            color:#337ab7;
+            font-size:1em;
+            text-align:center;
+        }
+    }
+    .generateImportBtn{
+        text-align:center;
+        button{
+            margin-top:3px;
+            text-align:center;
+            background:#337ab7;
+        }
+    }
+}
+.genertaeFormGroup{
+.generateFormInput{
+    display: flex;
+    flex-direction: column;
+    width:100%
+}
+}

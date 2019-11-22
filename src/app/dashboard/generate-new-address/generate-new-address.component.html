@@ -1,0 +1,46 @@
+<section class="generateWrap">
+    <div class="generateMainWrap">
+        <div class="generateCloseBtn">
+            <button [mat-dialog-close]="true" class="close-dialog">
+                <mat-icon>close</mat-icon>
+            </button>
+        </div>
+        <div class="generateFormHeading">
+            <h3>New Account</h3>
+        </div>
+        <!--form start-->
+        <form [formGroup]="generateNewForm" (ngSubmit)="onSubmitToImport()">
+            <div class="genertaeFormGroup">
+
+                <div class="generateFormInput">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Address</mat-label>
+                        <input matInput formControlName="generateNewAddress">
+                    </mat-form-field>
+                </div>
+
+
+                <div class="generateFormInput">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Nick name</mat-label>
+                        <input matInput formControlName="generateNewNickName">
+                    </mat-form-field>
+                </div>
+                <div class="generateFormInput">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Phrase</mat-label>
+                        <textarea matInput formControlName="generateNewPhrase"></textarea>
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <!--import button-->
+            <div class="generateImportBtn">
+                <div><label>Once Imported your Address will need to be activated by sending 20XRP to it</label></div>
+                <button mat-raised-button color="primary" type="submit">Import this address</button>
+            </div>
+        </form>
+        <!--import btn ended-->
+    </div>
+
+</section>
