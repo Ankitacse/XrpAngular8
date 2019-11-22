@@ -10,6 +10,7 @@ import { DashboardModule } from './dashboard/dashboard.module';
 import { GenerateNewAddressComponent } from './dashboard/generate-new-address/generate-new-address.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { TransactionService } from './service/transaction.service';
 @NgModule({
   declarations: [
     AppComponent
@@ -25,7 +26,7 @@ import { HttpClientModule } from '@angular/common/http';
     DashboardModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [TransactionService],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
   ],

@@ -9,13 +9,14 @@
             <h3>New Account</h3>
         </div>
         <!--form start-->
-        <form [formGroup]="generateNewForm" (ngSubmit)="onSubmitToImport()">
+        <form [formGroup]="generateNewForm"
+            (ngSubmit)="onSubmitToImport(generateNewForm.value)">
             <div class="genertaeFormGroup">
 
                 <div class="generateFormInput">
                     <mat-form-field appearance="outline">
                         <mat-label>Address</mat-label>
-                        <input matInput formControlName="generateNewAddress">
+                        <input matInput formControlName="generateAddress">
                     </mat-form-field>
                 </div>
 
@@ -23,13 +24,13 @@
                 <div class="generateFormInput">
                     <mat-form-field appearance="outline">
                         <mat-label>Nick name</mat-label>
-                        <input matInput formControlName="generateNewNickName">
+                        <input matInput formControlName="generateNickName">
                     </mat-form-field>
                 </div>
                 <div class="generateFormInput">
                     <mat-form-field appearance="outline">
                         <mat-label>Phrase</mat-label>
-                        <textarea matInput formControlName="generateNewPhrase"></textarea>
+                        <textarea matInput formControlName="generatePhrase"></textarea>
                     </mat-form-field>
                 </div>
             </div>
