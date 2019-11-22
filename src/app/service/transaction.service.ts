@@ -5,18 +5,17 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class TransactionService {
-  uri = 'http://localhost:4200/transaction';
+  url = 'http://localhost:4000/transaction';
   constructor(private http: HttpClient) { }
-
   //add new user account
-  addNewAccount(generateAddress,generateNickName, generatePhrase) {
+  addNewAccount(generateAddress, generateNickName, generatePhrase) {
     const obj = {
       generateAddress: generateAddress,
       generateNickName: generateNickName,
-      generatePhrase:  generatePhrase
+      generatePhrase: generatePhrase
     };
     console.log(obj);
-    this.http.post(`${this.uri}/add`, obj)
-        .subscribe(res => console.log('Done'));
+    this.http.post(`${this.url}/add`, obj)
+      .subscribe(res => console.log('Done'));
   }
 }

@@ -9,7 +9,7 @@ import { TransactionService } from 'src/app/service/transaction.service';
 })
 export class GenerateNewAddressComponent implements OnInit {
   generateNewForm: FormGroup;
-  constructor(private fb: FormBuilder,private ts:TransactionService) {
+  constructor(private fb: FormBuilder, private ts: TransactionService) {
   }
 
   ngOnInit() {
@@ -18,15 +18,11 @@ export class GenerateNewAddressComponent implements OnInit {
       generateNickName: ['', [Validators.required]],
       generatePhrase: ['', [Validators.required]],
     });
-    //     const RippleAPI = require('ripple-lib').RippleAPI;
-    // const api = new RippleAPI();
-    // const address = api.generateAddress();
-    // console.log('address', address.address);
-    // console.log('secret', address.secret);
   }
-  onSubmitToImport(generateAddress, generateNickName,generatePhrase) {
-    this.ts.addNewAccount(generateAddress, generateNickName,generatePhrase)
+  onSubmitToImport(gform: any) {
+    this.ts.addNewAccount(gform.generateAddress, gform.generateNickName, gform.generatePhrase)
     console.log('welcome');
+    console.log('assasassioo', gform);
 
   }
 }

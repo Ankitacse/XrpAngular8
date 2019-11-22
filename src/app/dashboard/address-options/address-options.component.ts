@@ -25,7 +25,6 @@ export class AddressOptionsComponent implements OnInit {
     // this.router.navigate(['/generateNewAddress']);
     const dialogConfig = new MatDialogConfig();
     this.dialogRef = this.dialog.open(GenerateNewAddressComponent, dialogConfig);
-  
   }
   addExisting(){
     this. displayRoutes=true;
