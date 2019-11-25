@@ -28,6 +28,6 @@ export class AddressOptionsComponent implements OnInit {
   }
   addExisting(){
     this. displayRoutes=true;
-    this.router.navigate(['/addExistingAddress']);
+    // this.router.navigate(['/addExistingAddress']);
   }
 }
