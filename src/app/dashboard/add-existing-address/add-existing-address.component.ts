@@ -49,23 +49,23 @@ export class AddExistingAddressComponent implements OnInit {
     if(!this.qrSeed && !this.qrPublicAddress) {
         this.qrSeed = new QRCode(this.qrSeedImg.nativeElement, {
             text: this.seed,
-            width: 200,
-            height: 200
+            width: 80,
+            height: 80
         });
         this.qrPublicAddress = new QRCode(this.qrPublicAddressImg.nativeElement, {
             text: this.address,
-            width: 200,
-            height: 200
+            width: 80,
+            height: 80
         });
         this.qrPrivateKey = new QRCode(this.qrPrivateKeyImg.nativeElement, {
             text: this.privateKey,
-            width: 200,
-            height: 200
+            width: 80,
+            height: 80
         });
         this.qrPublicKey = new QRCode(this.qrPublicKeyImg.nativeElement, {
             text: this.publicKey,
-            width: 200,
-            height: 200
+            width: 80,
+            height: 80
         });
     } else {
         this.qrSeed.clear();

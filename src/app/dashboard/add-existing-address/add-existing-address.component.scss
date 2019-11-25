@@ -3,5 +3,31 @@
     overflow: hidden;
     margin:0;
     padding:0;
+    // display:none;
+}
+table{
     display:none;
+}
+.qrMain{
+    margin-left:5px;
+    margin-right:5px;
+    border:2px solid #235772;
+    display:flex;
+    flex-direction: column;
+    .privateCode{
+        .privateCodeMain{
+            display:flex;
+            flex-direction:row;
+            justify-content:space-around;
+            flex-wrap: wrap;
+        }
+    }
+    .publicCode{
+        .publicCodeMain{
+            display:flex;
+            flex-direction:row;
+            justify-content:space-around;
+            flex-wrap: wrap;
+        }
+    }
 }

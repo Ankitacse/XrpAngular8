@@ -1,32 +1,71 @@
 <section class="add-existing-main">
 <p><button type="button" (click)="generate()">Generate</button></p>
 <p>Only items that are public should be shared</p>
-<table>
+<!-- <table>
     <tr>
         <td>
             <h2>Private Seed</h2>
-            <!-- <div #qrseed></div> -->
+             <div #qrseed></div> 
             <p>{{ seed }}</p>
         </td>
         <td>
             <h2>Public Address</h2>
-            <!-- <div #qrpublicaddress></div> -->
+             <div #qrpublicaddress></div> 
             <p>{{ address }}</p>
         </td>
     </tr>
     <tr>
         <td>
             <h2>Private Key</h2>
-            <!-- <div #qrprivatekey></div> -->
+            <div #qrprivatekey></div> 
             <p>{{ privateKey }}</p>
         </td>
         <td>
             <h2>Public Key</h2>
-            <!-- <div #qrpublickey></div> -->
+         <div #qrpublickey></div> 
             <p>{{ publicKey }}</p>
         </td>
     </tr>
-</table>
+</table> -->
+<div class="qrMain">
+    <div class="privateCode">
+      <div class="privateCodeMain">
+          <div class="privateSeed">
+              <div class="privateInsideQr">
+                    <h4>Private Address</h4>
+                <div #qrseed></div> 
+              </div>
+              <div class="privateInsideText">{{ seed }}</div>
+          </div>
+          <div class="privateKey">
+            <div class="privateInsideQr">
+                    <h4>Secret Key</h4>
+                <div #qrprivatekey></div> 
+            </div>
+            <div class="privateInsideText">{{ privateKey }}</div>
+          </div>
+      </div>
+    </div>
+    <div class="publicCode">
+        <div class="publicCodeMain">
+            <div class="publicSeed">
+                <div class="publicInsideQr">
+                    <h4>Public Address</h4>
+                    <div #qrpublicaddress></div> 
+                   
+                </div>
+                <div class="privateInsideText">{{ address }}</div>
+            </div>
+            <div class="publicKey">
+              <div class="publicInsideQr">
+                    <h4>Public Key</h4>
+                <div #qrpublickey></div> 
+              </div>
+              <div class="publicInsideText">{{publicKey}}</div>
+            </div>
+        </div>
+    </div>
+</div>
 </section>
 <!-- <router-outlet></router-outlet> -->
 
