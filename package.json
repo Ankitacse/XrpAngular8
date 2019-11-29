@@ -24,6 +24,7 @@
     "hammerjs": "^2.0.8",
     "ripple-keypairs": "^0.11.0",
     "ripple-lib": "^1.4.2",
+    "ripple-wallet": "^2.0.0",
     "rxjs": "~6.4.0",
     "rxjs-compat": "^6.5.3",
     "tslib": "^1.10.0",

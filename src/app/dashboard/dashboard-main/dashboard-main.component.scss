@@ -1,13 +1,21 @@
 .dashboardMain {
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
+  // width: 100vw;
+  // height: 100vh;
+  // margin: 0;
+  // padding: 0;
+    width: 100vw;
+    min-height: 100vh;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 .dashboardMainWrap {
   .dashboardHeader {
     margin: 0;
     padding: 0;
+    position: fixed;
+    z-index:2;
+    top: 0;
   }
   .dashboardMiddle {
     margin: 0;
@@ -32,7 +40,8 @@
     }
   }
   .dashboardFooter {
-    position: absolute;
+    position: fixed;
+    z-index:2;
     bottom: 0;
   }
 }

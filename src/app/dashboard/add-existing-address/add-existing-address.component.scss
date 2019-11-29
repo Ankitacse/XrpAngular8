@@ -1,33 +1,46 @@
-.add-existing-main{
-    width:100%;
-    overflow: hidden;
-    margin:0;
-    padding:0;
-    // display:none;
+.add-existing-main {
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  // display:none;
 }
-table{
-    display:none;
+table {
+  display: none;
 }
-.qrMain{
-    margin-left:5px;
-    margin-right:5px;
-    border:2px solid #235772;
-    display:flex;
-    flex-direction: column;
-    .privateCode{
-        .privateCodeMain{
-            display:flex;
-            flex-direction:row;
-            justify-content:space-around;
-            flex-wrap: wrap;
-        }
+.headerAddExisting {
+  margin: 10px;
+  text-align: center;
+  button {
+    background: #337ab7;
+    color: white;
+    margin-top: 30px;
+    font-weight: 400;
+  }
+  p {
+    text-align: left;
+  }
+}
+.qrMain {
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 2px solid #235772;
+  display: flex;
+  flex-direction: column;
+  .privateCode {
+    .privateCodeMain {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
     }
-    .publicCode{
-        .publicCodeMain{
-            display:flex;
-            flex-direction:row;
-            justify-content:space-around;
-            flex-wrap: wrap;
-        }
+  }
+  .publicCode {
+    .publicCodeMain {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
     }
+  }
 }

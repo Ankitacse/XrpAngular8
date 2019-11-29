@@ -14,7 +14,7 @@ export class AddExistingAddressComponent implements OnInit {
     private qrPublicAddress: any;
     private qrPrivateKey: any;
     private qrPublicKey: any;
-
+    
     @ViewChild("qrseed" ,{static: false})
     public qrSeedImg: ElementRef;
 
